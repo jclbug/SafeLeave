@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="shortcut icon" href="assets/logo.svg">
+    <title>Safe Leave</title>
+  </head>
+  <body class="" id="body">
+    <p class="time-box" id="time-box"></p>
+    <header class="header hide" id="header">
+      <nav class="nav">
+        <div class="title">
+          <img src="assets/logo.svg" alt="safe leave logo" class="logo" />
+          <p class="sL">Safe Leave</p>
+        </div>
+        <div class="gitBox">
+          <img src="assets/gitLogo.svg" alt="git logo" class="gitLogo" />
+          <p class="gitN">GitHub</p>
+        </div>
+      </nav>
+    </header>
+    <main class="main hide" id="main">
+      <div class="box">
+        <div class="posterBox">
+          <img src="assets/poster.png" alt="poster image" class="poster" />
+          <div>
+            <p class="s1">Attend smart</p>
+            <p class="s2">not hard</p>
+          </div>
+        </div>
+        <div class="loginBox">
+          <p class="desc">
+            Safe Leave is a web app that calculates how many days you can safely
+            leave classes without affecting your minimum attendance criteria per
+            subject.
+          </p>
+          <div class="calBoxBtn">
+            <button class="autoCal" id="autoCal">Auto Calculate</button>
+            <button class="manualCal" id="manualCal">Manually Calculate</button>
+          </div>
+        </div>
+      </div>
+      <img src="assets/Divider1.svg" alt="" class="divider" />
+      <div class="faqSec">
+        <p class="faqt">FAQs</p>
+        <div class="faqBox">
+          <div class="faq">
+            <div class="queBox">
+              <p class="que">Why do I need SafeLeave ?</p>
+              <img src="assets/downArrow.svg" alt="Down Arrow" class="arrow" />
+            </div>
+            <p class="ans hide">
+              <b>SafeLeave</b> helps students to manage their attendance
+              effectively and avoid the stress of worrying about attendance
+              requirements. It also ensures that students are not penalized for
+              unavoidable absences.
+            </p>
+          </div>
+          <div class="faq">
+            <div class="queBox">
+              <p class="que">Is SafeLeave free to use?</p>
+              <img src="assets/downArrow.svg" alt="Down Arrow" class="arrow" />
+            </div>
+            <p class="ans hide">
+              Yes, <b>SafeLeave</b> is completely free to use.
+            </p>
+          </div>
+          <div class="faq">
+            <div class="queBox">
+              <p class="que">How does SafeLeave work?</p>
+              <img src="assets/downArrow.svg" alt="Down Arrow" class="arrow" />
+            </div>
+            <p class="ans hide">
+              Simply enter your minimum attendance criteria and the number of
+              classes you have already attended, and <b>SafeLeave</b> will tell
+              you how many more classes you can safely leave without failing.
+            </p>
+          </div>
+          <div class="faq">
+            <div class="queBox">
+              <p class="que">Is SafeLeave accurate?</p>
+              <img src="assets/downArrow.svg" alt="Down Arrow" class="arrow" />
+            </div>
+            <p class="ans hide">
+              Yes, the calculations used in <b>SafeLeave</b> is completely
+              accurate and verified by our team. Though, it is recommended to
+              double check the result for utmost assurance.
+            </p>
+          </div>
+          <div class="faq">
+            <div class="queBox">
+              <p class="que">What devices does SafeLeave work on?</p>
+              <img src="assets/downArrow.svg" alt="Down Arrow" class="arrow" />
+            </div>
+            <p class="ans hide">
+              <b>SafeLeave</b> is a web app, so it works on any device with a
+              web browser, including desktops, laptops, tablets, and
+              smartphones.
+            </p>
+          </div>
+          <div class="faq">
+            <div class="queBox">
+              <p class="que">
+                What is the minimum browser version required for SafeLeave?
+              </p>
+              <img src="assets/downArrow.svg" alt="Down Arrow" class="arrow" />
+            </div>
+            <p class="ans hide">
+              <b>SafeLeave</b> is compatible with most modern web browsers,
+              including Chrome, Firefox, Safari, and Edge.
+            </p>
+          </div>
+          <div class="faq">
+            <div class="queBox">
+              <p class="que">Is my attendance data safe with SafeLeave?</p>
+              <img src="assets/downArrow.svg" alt="Down Arrow" class="arrow" />
+            </div>
+            <p class="ans hide">
+              Yes, <b>SafeLeave</b> takes data privacy and security very
+              seriously. We don't store attendance data or any other student's
+              data on our servers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="assets/Divider2.svg" alt="" class="divider2" />
+    </main>
+    <!-- auto calculate page -->
+    <section class="autoSec hide" id="autoSec">
+      <div class="autoCalBox">
+        <p class="autoTitle">Enter Login Details</p>
+        <div>
+          <p class="label">Quantum Id</p>
+          <input type="number" placeholder="Enter Id" class="inputs dis" id="id" />
+          <br />
+          <p class="label">Password</p>
+          <input
+            type="password"
+            placeholder="Enter password"
+            class="inputs"
+            id="pw"
+          />
+          <button class="submit" id="submit">Get Details</button>
+        </div>
+        <div class="notice">
+          <img src="assets/info.svg" />
+          <p class="excl">
+            This page is exclusively for the use of
+            <b>Quantum University, Roorkee </b> students.
+          </p>
+        </div>
+      </div>
+      <div class="overlay hide" id="overlay">
+        <div class="loadBox">
+          <div class="square1"></div>
+          <div class="square2"></div>
+          <div class="square3"></div>
+          <div class="square4"></div>
+          <div class="square5"></div>
+          <div class="square6"></div>
+          <div class="square7"></div>
+          <div class="square8"></div>
+          <div class="square9"></div>
+        </div>
+        <div class="fetchMsg">Fetching Data</div>
+      </div>
+    </section>
+    <!-- auto calculate page end -->
+    <!-- subject detail input section -->
+    <section class="subInputSec hide">
+      <div class="subBox">
+        <p class="autoTitle">Enter Subject Details</p>
+        <p class="stdName" id="stdName"></p>
+        <div class="minPerBox">
+          <p class="perL">Percentage Limit</p>
+          <input type="number" class="perIn" id="perIn" value="75" />
+          <p>%</p>
+        </div>
+        <div class="subjects" id="subjects">
+          <div class="card subCard">
+            <p class="lab">Subject Name</p>
+            <input
+              type="text"
+              class="subName inp"
+              placeholder="Ex: Artificial Intelligence"
+             />
+            <div class="lecBox">
+              <div class="tLec">
+                <p class="lab">Total Lectures</p>
+                <input type="number" class="inp totLec" placeholder="Ex: 28" />
+              </div>
+              <div class="abs">
+                <p class="lab">Absent</p>
+                <input type="number" class="inp totAbs" placeholder="Ex: 2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="addSubBox" id="addSub">
+            <img src="assets/add.svg" alt="add subject" />
+            <p class="xyz">Add Subject</p>
+          </div>
+          <div class="calBox">
+            <button class="calLeave" id="calLeave">Calculate Leave</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- subject detail input section end-->
+    <!-- result section -->
+    <section class="resultSec hide">
+      <div class="resultBox">
+        <p class="res">Results</p>
+        <div class="dateBox hide" id="dateBox">
+          <p class="dateDes" id="dateHead">You can safely take leave from</p>
+          <p class="dates hide" id="dates"></p>
+          <p class="dateDes hide" id="dateSub">For the following subjects</p>
+          <div class="dateLoad" id="dateLoad">&nbsp;</div>
+          <button class="retry hide" id="retry">Retry</button>
+        </div>
+        <div class="cardBox subDateHide" id="cardBox">
+          
+          <!-- ---------------------------------------------- -->
+          <!-- <div class="card cardG">
+                    <p class="subTitle">java Programming</p>
+                    <div class="detailBox">
+                        <div class="details">
+                            <p class="info">Total Lecture</p>
+                            <p class="dot">:</p>
+                            <p class="infoValue">30</p>
+                            <p class="info">Present</p>
+                            <p class="dot">:</p>
+                            <p class="infoValue">28</p>
+                            <p class="absnt">Absent</p>
+                            <p class="dot">:</p>
+                            <p class="infoValue">2</p>
+                        </div>
+                        <div class="leaveBox">
+                            <p class="lvNo">9</p>
+                            <p class="lvCont">Leave Count</p>
+                        </div>
+                    </div>
+                    <div class="attendBox">
+                        <p class="attend">Attendance</p>
+                        <p class="dot">:</p>
+                        <p class="prcnt">96%</p>
+                    </div>            
+                    <div class="msgBox">Attend 7 more classes continuously to cross 75%</div></div>
+                </div> -->
+          <!-- ---------------------------------------------- -->
+
+        </div>
+      </div>
+    </section>
+    <footer class="footer hide" id="footer">
+      <img src="assets/pin.svg" alt="pin image" class="pin" />
+      <p class="footerDesc">
+        Created with love for Quantum University a project that will make your
+        attendance woes a distant memory!
+      </p>
+    </footer>
+    <script src="script/addSubScript.js"></script>
+  </body>
+</html>
