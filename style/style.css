@@ -6,7 +6,7 @@
   --txt: #f7f7f8;
   --title: #a8a8a8;
   --inputBg: #35353a;
-  --deposit: #37F32b;
+  --deposit: #37f32b;
   --thin: 100;
   --regular: 200;
   --medium: 300;
@@ -94,11 +94,19 @@ button {
   display: block;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  margin: 0;
 }
 
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+a {
+  text-decoration: none;
+}
 
 /* style */
 header {
@@ -376,7 +384,7 @@ main {
   outline: 3px solid #ff6b6b;
 }
 
-.disable > .card > .subName{
+.disable > .card > .subName {
   pointer-events: none;
 }
 
@@ -465,7 +473,7 @@ main {
   margin-bottom: 30px;
 }
 
-.subDate{
+.subDate {
   text-align: center;
   margin-bottom: 15px;
   padding: 10px;
@@ -733,6 +741,20 @@ main {
   font-weight: var(--bold);
 }
 
+.captchaBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.captcha {
+  border-radius: 10px;
+}
+
 /* green color of card styling */
 .cardG {
   background-color: #6f9d76;
@@ -746,7 +768,7 @@ main {
   background-color: #c7e1cb;
 }
 
-.cardG > .subDate{
+.cardG > .subDate {
   color: #305035;
   background-color: #96b99b;
 }
@@ -769,7 +791,7 @@ main {
   background-color: #e1e1c7;
 }
 
-.cardY > .subDate{
+.cardY > .subDate {
   color: #4f5030;
   background-color: #b0b093;
 }
@@ -792,7 +814,7 @@ main {
   background-color: #e1c7c7;
 }
 
-.cardR > .subDate{
+.cardR > .subDate {
   color: #503030;
   background-color: #bd9090;
 }
@@ -802,7 +824,7 @@ main {
   color: #f0e5e5;
 }
 
-.subDateHide > .card > .subDate{
+.subDateHide > .card > .subDate {
   display: none;
 }
 
@@ -1047,7 +1069,7 @@ main {
   color: var(--txt);
 }
 
-.time-box{
+.time-box {
   color: var(--deposit);
   font-size: 1.8rem;
   /* font-weight: 550; */
@@ -1062,12 +1084,12 @@ main {
 }
 
 @keyframes changeColor {
-  0%{
-      color: var(--deposit);
+  0% {
+    color: var(--deposit);
   }
 
-  100%{
-      color: orangered;
+  100% {
+    color: orangered;
   }
 }
 
@@ -1075,51 +1097,49 @@ main {
   display: none;
 }
 
-
 /*  media */
 
 @media only screen and (max-width: 500px) {
-  .nav{
-      padding: 1.5rem  2rem;
+  .nav {
+    padding: 1.5rem 2rem;
   }
 
-  .posterBox{
-      padding: 1rem 2rem;
+  .posterBox {
+    padding: 1rem 2rem;
   }
 
-  .s1, .s2{
-      font-size: 4rem;
+  .s1,
+  .s2 {
+    font-size: 4rem;
   }
 
-  .box{
-      flex-direction: column;
+  .box {
+    flex-direction: column;
   }
 
-  .loginBox{
-      margin-bottom: 5rem;
-      padding: 1rem 2rem;
+  .loginBox {
+    margin-bottom: 5rem;
+    padding: 1rem 2rem;
   }
 
-  .faqSec{
-      padding: 5rem 2rem 20rem 2rem;
+  .faqSec {
+    padding: 5rem 2rem 20rem 2rem;
   }
 
-
-
-  .card{
-      margin-bottom: 3rem;
+  .card {
+    margin-bottom: 3rem;
   }
 
-  .subTitle{
-      margin: 0 0 2rem 2rem;
-      font-size: 2.5rem;
+  .subTitle {
+    margin: 0 0 2rem 2rem;
+    font-size: 2.5rem;
   }
 
-  .detailBox{
-      padding: 3rem 2rem;
+  .detailBox {
+    padding: 3rem 2rem;
   }
 
-  .time-box{
-      color: var(--deposit);
+  .time-box {
+    color: var(--deposit);
   }
 }

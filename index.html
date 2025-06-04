@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="shortcut icon" href="assets/logo.svg">
+    <link rel="shortcut icon" href="assets/logo.svg" />
     <title>Safe Leave</title>
   </head>
   <body class="" id="body">
@@ -15,10 +15,10 @@
           <img src="assets/logo.svg" alt="safe leave logo" class="logo" />
           <p class="sL">Safe Leave</p>
         </div>
-        <div class="gitBox">
+        <a href="https://github.com/jclbug" class="gitBox">
           <img src="assets/gitLogo.svg" alt="git logo" class="gitLogo" />
           <p class="gitN">GitHub</p>
-        </div>
+        </a>
       </nav>
     </header>
     <main class="main hide" id="main">
@@ -26,8 +26,8 @@
         <div class="posterBox">
           <img src="assets/poster.png" alt="poster image" class="poster" />
           <div>
-            <p class="s1">Attend smart</p>
-            <p class="s2">not hard</p>
+            <p class="s1">Bunk like a Pro</p>
+            <p class="s2">Study like a champ</p>
           </div>
         </div>
         <div class="loginBox">
@@ -133,7 +133,12 @@
         <p class="autoTitle">Enter Login Details</p>
         <div>
           <p class="label">Quantum Id</p>
-          <input type="number" placeholder="Enter Id" class="inputs dis" id="id" />
+          <input
+            type="number"
+            placeholder="Enter Id"
+            class="inputs dis"
+            id="id"
+          />
           <br />
           <p class="label">Password</p>
           <input
@@ -142,6 +147,21 @@
             class="inputs"
             id="pw"
           />
+
+          <div class="captchaBox">
+            <img
+              id="captchaImage"
+              src="captcha"
+              alt="captcha image"
+              class="captcha"
+            />
+            <input
+              id="captchaValue"
+              type="text"
+              class="captchaInput inputs"
+              placeholder="Enter Captcha"
+            />
+          </div>
           <button class="submit" id="submit">Get Details</button>
         </div>
         <div class="notice">
@@ -185,7 +205,7 @@
               type="text"
               class="subName inp"
               placeholder="Ex: Artificial Intelligence"
-             />
+            />
             <div class="lecBox">
               <div class="tLec">
                 <p class="lab">Total Lectures</p>
@@ -221,7 +241,6 @@
           <button class="retry hide" id="retry">Retry</button>
         </div>
         <div class="cardBox subDateHide" id="cardBox">
-          
           <!-- ---------------------------------------------- -->
           <!-- <div class="card cardG">
                     <p class="subTitle">java Programming</p>
@@ -250,7 +269,6 @@
                     <div class="msgBox">Attend 7 more classes continuously to cross 75%</div></div>
                 </div> -->
           <!-- ---------------------------------------------- -->
-
         </div>
       </div>
     </section>
@@ -261,6 +279,6 @@
         attendance woes a distant memory!
       </p>
     </footer>
-    <script src="script/addSubScript.js"></script>
+    <script type="module" src="./script/addSubScript.js"></script>
   </body>
 </html>
